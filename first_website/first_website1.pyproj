@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b89b4888-e768-41e8-9720-cefc310f5b9f}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <InterpreterId>CondaEnv|CondaEnv|myDjangoEnv</InterpreterId>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <DjangoSettingsModule>first_website.settings</DjangoSettingsModule>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="first_website\settings.py" />
+    <Compile Include="first_website\urls.py" />
+    <Compile Include="first_website\wsgi.py" />
+    <Compile Include="first_website\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="music\admin.py" />
+    <Compile Include="music\apps.py" />
+    <Compile Include="music\forms.py" />
+    <Compile Include="music\migrations\0001_initial.py" />
+    <Compile Include="music\migrations\0002_auto_20181217_2237.py" />
+    <Compile Include="music\migrations\0003_song_is_favorite.py" />
+    <Compile Include="music\migrations\0004_auto_20181221_1837.py" />
+    <Compile Include="music\migrations\__init__.py" />
+    <Compile Include="music\models.py" />
+    <Compile Include="music\tests.py" />
+    <Compile Include="music\urls.py" />
+    <Compile Include="music\views.py" />
+    <Compile Include="music\__init__.py" />
+    <Compile Include="populate_music.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="media\Mors-Principium-Est-___And-Death-Said-Live-2013-Album-Tracklist.jpg" />
+    <Content Include="media\Mors-Principium-Est-___And-Death-Said-Live-2013-Album-Tracklist_EHsz8OY.jpg" />
+    <Content Include="media\Mors-Principium-Est-___And-Death-Said-Live-2013-Album-Tracklist_rpzpJF6.jpg" />
+    <Content Include="media\R-4025130-1379945614-4443.jpeg.jpg" />
+    <Content Include="media\R-4025130-1379945614-4443.jpeg_KwWZkHl.jpg" />
+    <Content Include="media\R-4025130-1379945614-4443.jpeg_ufEk7h8.jpg" />
+    <Content Include="media\R-4025130-1379945614-4443.jpeg_VeUHX3c.jpg" />
+    <Content Include="music\static\music\images\background1.jpg" />
+    <Content Include="music\static\music\style.css" />
+    <Content Include="music\templates\music\album_form.html" />
+    <Content Include="music\templates\music\base.html" />
+    <Content Include="music\templates\music\detail.html" />
+    <Content Include="music\templates\music\form-template.html" />
+    <Content Include="music\templates\music\index.html" />
+    <Content Include="music\templates\music\registration_form.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="first_website" />
+    <Folder Include="media" />
+    <Folder Include="music" />
+    <Folder Include="music\migrations" />
+    <Folder Include="music\static\" />
+    <Folder Include="music\static\music" />
+    <Folder Include="music\static\music\images" />
+    <Folder Include="music\templates\" />
+    <Folder Include="music\templates\music" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|myDjangoEnv" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
